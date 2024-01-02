@@ -1,14 +1,15 @@
 // Home.js
 import React from 'react';
-import Header from '../Components/Header';
+import Header from "../Components/Header.tsx";
+import Profile from "../../assets/profile-picture.jpg";
 
 const Home = () => {
   return (
     <div>
       <Header 
-        title="Titre de la bannière"
-        subtitle="Sous-texte de la bannière"
-        imageUrl="url_de_votre_image.jpg"
+        title="Loïc Rouzaud"
+        subtitle="Développeur"
+        imageUrl={Profile}
     />
     </div>
   );
