@@ -1,0 +1,39 @@
+
+.content {
+    margin: 150px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    color: white;
+    font-family: Arial;
+    width: 120px;
+    height: 20vh;
+    padding: 20px;
+    text-align: center;
+    background: #4a72f5;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #4a72f5;
+    transition: all 0.4s ease-in;
+    margin: 1rem 1rem;
+}
+
+.inside {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.blur {
+    filter: blur(1px);
+    opacity: .35;
+    transform: scale(0.95);
+    box-shadow: none;
+}
