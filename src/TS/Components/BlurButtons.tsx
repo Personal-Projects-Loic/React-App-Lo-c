@@ -13,8 +13,8 @@ const BlurButtons = () => {
         onMouseEnter={() => setIsBox1Hovered(true)}
         onMouseLeave={() => setIsBox1Hovered(false)}
       >
-        HOVER ME
-        <div className="inside">ADD CONTENT</div>
+        Project
+        <div className="inside">Here is my projects !</div>
       </div>
 
       <div
@@ -22,8 +22,8 @@ const BlurButtons = () => {
         onMouseEnter={() => setIsBox2Hovered(true)}
         onMouseLeave={() => setIsBox2Hovered(false)}
       >
-        HOVER ME
-        <div className="inside">ADD CONTENT</div>
+        CV
+        <div className="inside">Here is my CV in pdf !</div>
       </div>
 
       <div
@@ -31,8 +31,8 @@ const BlurButtons = () => {
         onMouseEnter={() => setIsBox3Hovered(true)}
         onMouseLeave={() => setIsBox3Hovered(false)}
       >
-        HOVER ME
-        <div className="inside">ADD CONTENT</div>
+        Competences
+        <div className="inside">All my hobbies and my favorite langages !</div>
       </div>
     </div>
   );
