@@ -1,7 +1,8 @@
 // Header.tsx
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Titles from "./Title.tsx"
+import Titles from "./Title.tsx";
+import Corpus from "./Corpus.tsx";
 
 export const HeaderContainer = styled.div`
   text-align: center;
@@ -44,7 +45,6 @@ export const Content = styled.div`
   height: calc(100% - 100vh);
 `;
 
-
 interface HeaderProps {
   title: string;
   subtitle: string;
@@ -68,13 +68,25 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle, imageUrl }) => {
 
   return (
     <HeaderContainer>
-      <Banner style={{ backgroundImage: `url(${imageUrl})`, transform: `translateY(-${scrollPosition}px)` }}>
+      <Banner
+        style={{
+          backgroundImage: `url(${imageUrl})`,
+          transform: `translateY(-${scrollPosition}px)`,
+        }}
+      >
         <Title>{title}</Title>
         <ProfileImage src={imageUrl} alt="Profile" />
         <Subtitle>{subtitle}</Subtitle>
       </Banner>
       <Content>
         <Titles text="My journey" />
+        <Corpus
+          title="Lorem ipsum"
+          children={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        />
       </Content>
     </HeaderContainer>
   );
