@@ -1,6 +1,7 @@
 // Header.tsx
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Titles from "./Title.tsx"
 
 export const HeaderContainer = styled.div`
   text-align: center;
@@ -73,47 +74,7 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle, imageUrl }) => {
         <Subtitle>{subtitle}</Subtitle>
       </Banner>
       <Content>
-        <h1>hello world !</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum?</p>
+        <Titles text="My journey" />
       </Content>
     </HeaderContainer>
   );
