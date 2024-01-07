@@ -26,7 +26,7 @@ export const Banner = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-  max-width: 20%;
+  max-width: 100%;
   height: auto;
   z-index: 2;
 `;
@@ -46,9 +46,9 @@ export const Content = styled.div`
 `;
 
 interface HeaderProps {
-  title: string;
-  subtitle: string;
-  imageUrl: string;
+  title?: string;
+  subtitle?: string;
+  imageUrl?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ title, subtitle, imageUrl }) => {
