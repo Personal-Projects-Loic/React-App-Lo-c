@@ -20,7 +20,12 @@ const Title = styled.h2`
   background-color: white;
 `;
 
-const Corpus = ({ title, children }) => {
+interface CorpusProps {
+  title: string;
+  children: string;
+}
+
+const Corpus: React.FC<CorpusProps> = ({ title, children }) => {
   return (
     <CorpusContainer>
       <Title>{title}</Title>

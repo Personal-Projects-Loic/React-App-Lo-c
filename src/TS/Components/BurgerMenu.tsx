@@ -16,7 +16,6 @@ const StyledCloseIcon = styled(IoClose)`
   width: 30px;
   height: 30px;
   color: red;
-  margin: 6px 0;
   transition: 0.4s;
 `;
 
@@ -24,23 +23,13 @@ const StyledHamburgerIcon = styled(GiHamburgerMenu)`
   width: 30px;
   height: 30px;
   color: red;
-  margin: 6px 0;
   transition: 0.4s;
 `;
-
-
-// const BurgerIcon = styled.div`
-//   width: 30px;
-//   height: 3px;
-//   background-color: #333;
-//   margin: 6px 0;
-//   transition: 0.4s;
-// `;
 
 const MenuContainer = styled.div<MenuContainerProps>`
   position: fixed;
   top: 0;
-  left: 0;
+  left: ${(props) => (props.isOpen ? "0" : "-20%")};
   width: 20%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -49,9 +38,7 @@ const MenuContainer = styled.div<MenuContainerProps>`
   align-items: center;
   justify-content: center;
   z-index: 1;
-  transform: ${(props) =>
-    props.isOpen ? "translateX(0)" : "translateX(-100%)"};
-  transition: 0.5s;
+  transition: left 0.5s;
 `;
 
 const MenuItem = styled(Link)`
@@ -60,7 +47,6 @@ const MenuItem = styled(Link)`
   font-size: 24px;
   margin: 20px;
 `;
-
 
 interface MenuContainerProps {
   isOpen: boolean;

@@ -1,8 +1,8 @@
 // Header.tsx
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Titles from "./Title.tsx";
-import Corpus from "./Corpus.tsx";
+import Titles from "./Title";
+import Corpus from "./Corpus"
 
 export const HeaderContainer = styled.div`
   text-align: center;
