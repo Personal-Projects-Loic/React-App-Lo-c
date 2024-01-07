@@ -1,7 +1,8 @@
-// BurgerMenu.tsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 const BurgerContainer = styled.div`
   position: fixed;
@@ -11,13 +12,30 @@ const BurgerContainer = styled.div`
   cursor: pointer;
 `;
 
-const BurgerIcon = styled.div`
+const StyledCloseIcon = styled(IoClose)`
   width: 30px;
-  height: 3px;
-  background-color: #333;
+  height: 30px;
+  color: red;
   margin: 6px 0;
   transition: 0.4s;
 `;
+
+const StyledHamburgerIcon = styled(GiHamburgerMenu)`
+  width: 30px;
+  height: 30px;
+  color: red;
+  margin: 6px 0;
+  transition: 0.4s;
+`;
+
+
+// const BurgerIcon = styled.div`
+//   width: 30px;
+//   height: 3px;
+//   background-color: #333;
+//   margin: 6px 0;
+//   transition: 0.4s;
+// `;
 
 const MenuContainer = styled.div<MenuContainerProps>`
   position: fixed;
@@ -31,7 +49,8 @@ const MenuContainer = styled.div<MenuContainerProps>`
   align-items: center;
   justify-content: center;
   z-index: 1;
-  transform: ${(props) => (props.isOpen ? "translateX(0)" : "translateX(-100%)")};
+  transform: ${(props) =>
+    props.isOpen ? "translateX(0)" : "translateX(-100%)"};
   transition: 0.5s;
 `;
 
@@ -42,8 +61,9 @@ const MenuItem = styled(Link)`
   margin: 20px;
 `;
 
+
 interface MenuContainerProps {
-    isOpen: boolean;
+  isOpen: boolean;
 }
 
 const BurgerMenu: React.FC<MenuContainerProps> = () => {
@@ -56,9 +76,7 @@ const BurgerMenu: React.FC<MenuContainerProps> = () => {
   return (
     <>
       <BurgerContainer onClick={toggleMenu}>
-        <BurgerIcon />
-        <BurgerIcon />
-        <BurgerIcon />
+        {isOpen ? <StyledCloseIcon /> : <StyledHamburgerIcon />}
       </BurgerContainer>
       <MenuContainer isOpen={isOpen}>
         <MenuItem to="/projects" onClick={toggleMenu}>
