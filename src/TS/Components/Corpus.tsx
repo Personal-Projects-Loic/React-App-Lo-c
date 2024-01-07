@@ -6,7 +6,6 @@ const CorpusContainer = styled.div`
   margin: 0 auto;
   text-align: left;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   position: relative;
 `;
@@ -15,8 +14,10 @@ const Title = styled.h2`
   position: absolute;
   top: 0;
   left: 0;
-  margin-bottom: 20px;
+  margin: -50px;
+  margin-left: 10px;
   padding: 10px;
+  background-color: white;
 `;
 
 const Corpus = ({ title, children }) => {
