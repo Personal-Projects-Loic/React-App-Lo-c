@@ -7,8 +7,10 @@ const ArrowContainer = styled.div`
   position: fixed;
   top: 20px;
   left: 20px;
+  height: 20vh;
   z-index: 2;
   cursor: pointer;
+  margin-top: 40px;
 `;
 
 interface BackArrowProps {

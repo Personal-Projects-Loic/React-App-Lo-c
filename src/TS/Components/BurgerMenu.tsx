@@ -15,7 +15,7 @@ const BurgerContainer = styled.div`
 const StyledCloseIcon = styled(IoClose)`
   width: 30px;
   height: 30px;
-  color: red;
+  color: white;
   margin: 6px 0;
   transition: 0.4s;
 `;
@@ -23,7 +23,7 @@ const StyledCloseIcon = styled(IoClose)`
 const StyledHamburgerIcon = styled(GiHamburgerMenu)`
   width: 30px;
   height: 30px;
-  color: red;
+  color: black;
   margin: 6px 0;
   transition: 0.4s;
 `;

@@ -28,7 +28,7 @@ const Title: React.FC<TitleProps> = ({ text }) => {
   return (
     <TitleContainer>
       <Separator />
-      <div>{text}</div>
+      {text}
       <Separator />
     </TitleContainer>
   );

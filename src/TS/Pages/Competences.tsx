@@ -12,7 +12,7 @@ const Container = styled.div`
 const Competences = () => {
     return (
       <Container>
-        <BackArrow to = '/'/>
+        <BackArrow to='/'/>
         <Title text='Competences'/>
       </Container>
     );
