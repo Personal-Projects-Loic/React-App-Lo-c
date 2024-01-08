@@ -11,8 +11,9 @@ const TitleContainer = styled.div`
   justify-content: center;
   margin: auto;
   height: 20vh;
-  width: 20%;
-  font-size: 24px;
+  width: 40%;
+  font-size: 45px;
+  font-weight: bold;
 `;
 
 const Separator = styled.div`

@@ -1,21 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title from '../Components/Title';
-import BackArrow from '../Components/BackArrow';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const Competences = () => {
+const Projects = () => {
     return (
-      <Container>
-        <BackArrow to='/'/>
-        <Title text='Competences'/>
-      </Container>
+      <div>
+        <iframe src="https://giphy.com/embed/JPgbfjx4d2sAAkQabX" width="320" height="480" frameBorder="0" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mediamodifier-iphone-app-development-screen-JPgbfjx4d2sAAkQabX">via GIPHY</a></p>
+      </div>
     );
   };
   
-  export default Competences;
+  export default Projects;
+  
