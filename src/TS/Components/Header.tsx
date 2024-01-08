@@ -3,10 +3,12 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Titles from "./Title";
 import Corpus from "./Corpus"
+import ProfilePic from "./../../assets/profilepic.png"
 
 export const HeaderContainer = styled.div`
   text-align: center;
   position: relative;
+
 `;
 
 export const Banner = styled.div`
@@ -23,6 +25,7 @@ export const Banner = styled.div`
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
+  overflow: hidden;
 `;
 
 export const ProfileImage = styled.img`
@@ -51,7 +54,7 @@ interface HeaderProps {
   imageUrl?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, subtitle, imageUrl }) => {
+const Header: React.FC<HeaderProps> = ({ title, subtitle }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -74,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle, imageUrl }) => {
         }}
       >
         <Title>{title}</Title>
-        <ProfileImage src={imageUrl} alt="Profile" />
+        <ProfileImage src={ProfilePic} alt="Profile" />
         <Subtitle>{subtitle}</Subtitle>
       </Banner>
       <Content>

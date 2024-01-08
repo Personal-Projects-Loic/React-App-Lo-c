@@ -32,9 +32,9 @@ const MenuContainer = styled.div<MenuContainerProps>`
   position: fixed;
   top: 0;
   left: 0;
-  width: 20%;
+  width: 15%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the left */
@@ -79,7 +79,7 @@ const BurgerMenu: React.FC<MenuContainerProps> = () => {
           Competences
         </MenuItem>
         <MenuItem to="/contacts" onClick={toggleMenu}>
-          Contacts / Quick links
+          Contacts
         </MenuItem>
         <MenuItem to="/blog" onClick={toggleMenu}>
           Blog

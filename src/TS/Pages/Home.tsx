@@ -5,7 +5,7 @@ import BurgerMenu from "../Components/BurgerMenu";
 const Home = () => {
   return (
     <div>
-      <Header title="Loïc Rouzaud" subtitle="Développeur" imageUrl={"../../assets/profile-picture.jpg"} />
+      <Header title="Loïc Rouzaud" subtitle="Développeur" />
       <BurgerMenu isOpen/>
     </div>
   );
