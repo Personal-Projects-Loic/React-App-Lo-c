@@ -37,19 +37,19 @@ const MenuContainer = styled.div<MenuContainerProps>`
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Align items to the left */
   justify-content: center;
   z-index: 1;
-  transform: ${(props) =>
-    props.isOpen ? "translateX(0)" : "translateX(-100%)"};
+  transform: ${(props) => (props.isOpen ? "translateX(0)" : "translateX(-100%)")};
   transition: 0.5s;
+  padding-top: 20px; /* Add some top padding for separation */
 `;
 
 const MenuItem = styled(Link)`
   text-decoration: none;
   color: white;
   font-size: 24px;
-  margin: 20px;
+  margin: 10px 20px; /* Add margin for separation */
 `;
 
 interface MenuContainerProps {

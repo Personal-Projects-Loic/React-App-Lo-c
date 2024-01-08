@@ -70,7 +70,6 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle, imageUrl }) => {
     <HeaderContainer>
       <Banner
         style={{
-          backgroundImage: `url(${imageUrl})`,
           transform: `translateY(-${scrollPosition}px)`,
         }}
       >
