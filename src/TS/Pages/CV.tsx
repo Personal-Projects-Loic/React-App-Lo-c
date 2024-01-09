@@ -1,12 +1,12 @@
 import React from 'react';
+// @ts-ignore 
+import cvPdf from "../../Documents/CV.pdf";
 
 const CVViewer = () => {
 
-  var cvUrl = "../../../public/Documents/CV.pdf";
-
   return (
     <div>
-      <iframe title="CV" src={cvUrl} width="1000px" height="1500px" style={{ border: 'none' }} />
+      <iframe title="CV" src={cvPdf} width="100%" height="1300px" style={{ border: 'none' }} />
     </div>
   );
 };
