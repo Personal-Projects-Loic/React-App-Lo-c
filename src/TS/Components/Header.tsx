@@ -84,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle }) => {
         <Corpus
           title="Qui suis-je ?"
           children={
-            "Bonjour ! Je m'appelle Loïc Rouzaud, je suis un développeur web fullstack. J'ai débuté la programmation en 2019 au lycée, et depuis, je n'ai jamais cessé. Mes premiers pas ont été avec le C. Par la suite, j'ai acquis des compétences avec des technologies telles que React, Node.js, Express.js, MongoDB, et bien d'autres. Ma passion pour le développement web me pousse à toujours chercher de nouveaux projets à réaliser. \
+            "Bonjour ! Je m'appelle Loïc Rouzaud, j'aspire à devenir développeur web fullstack. J'ai débuté la programmation en 2019 au lycée, et depuis, je n'ai jamais cessé. Mes premiers pas ont été avec le C. Par la suite, j'ai acquis des compétences avec des technologies telles que React, Node.js. Ma passion pour le développement web me pousse à toujours chercher de nouveaux projets à réaliser. \
             Actuellement en formation à Epitech, une école informatique basée à Toulouse, je suis engagé dans ce cursus depuis le 1er septembre 2020.\
             À côté de mon engagement professionnel, la musique occupe une place importante dans ma vie. Pratiquant la guitare depuis 2012, j'ai débuté avec la guitare classique avant de me tourner vers la guitare électrique. J'ai également exploré la basse et participé à plusieurs groupes de rock."
           }
@@ -113,10 +113,9 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle }) => {
           }
         />
         <Corpus
-          title="Lorem ipsum"
+          title="Et dans 5 ans alors ?"
           children={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "J'ai besoin de communication et de contacts humains. Le metier de developpeur est pour moi un moyen afin de pouvoir trouver le metier qui me correspondra le plus. J'aimerais travailler dans la chefferie de projets, ou dans le management de projets IT et ambitieux. Mon projet de fin d'etude me plait beaucoup, si ce projet abouti j'aimerais en faire une vraie entreprise et vendre cette solution au plus grand nombre (voir page projets)."
           }
         />
       </Content>

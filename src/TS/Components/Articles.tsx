@@ -27,12 +27,13 @@ const ArticleImage = styled.img`
 `;
 
 const ArticleTitle = styled.h2`
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10px;
 `;
 
 const ArticleText = styled.p`
-  font-size: 16px;
+  font-size: 26px;
+  margin-right: 10px;
 `;
 
 interface ArticleProps {
@@ -49,7 +50,7 @@ const Article: React.FC<ArticleProps> = ({ title, imageSrc, text }) => {
       </ImageColumn>
       <TextColumn>
         <ArticleTitle>{title}</ArticleTitle>
-        <ArticleText>{text.length > 500 ? text.slice(0, 500) + '...' : text}</ArticleText>
+        <ArticleText>{text}</ArticleText>
       </TextColumn>
     </ArticleContainer>
   );
