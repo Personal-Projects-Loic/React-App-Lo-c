@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 const SeparatorContainer = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  width: 70%;
+  margin: 20px auto;
 `;
 
 const SeparatorLine = styled.div`
@@ -13,20 +15,9 @@ const SeparatorLine = styled.div`
   background-color: black;
 `;
 
-const SeparatorTitle = styled.div`
-  margin: 0 10px;
-  font-size: 24px;
-  color: Black;
-`;
-
-interface SeparatorProps {
-  title?: string;
-}
-
-const Separator: React.FC<SeparatorProps> = ({ title }) => {
+const Separator: React.FC = () => {
   return (
     <SeparatorContainer>
-      {title && <SeparatorTitle>{title}</SeparatorTitle>}
       <SeparatorLine />
     </SeparatorContainer>
   );

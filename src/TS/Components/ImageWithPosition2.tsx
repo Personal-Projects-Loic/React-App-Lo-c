@@ -19,6 +19,7 @@ const Container = styled.div`
 const DualContainer = styled.div`
   display: flex;
   width: 100%;
+  flex-direction: row-reverse;
 `;
 
 const ImageContainer = styled.div<ImageContainerProps>`
@@ -70,7 +71,7 @@ interface ImageProps {
   corpus: string;
 }
 
-const ImageWithPositionRight: React.FC<ImageProps> = ({
+const ImageWithPositionLeft: React.FC<ImageProps> = ({
   src1,
   src2,
   alt1,
@@ -98,4 +99,4 @@ const ImageWithPositionRight: React.FC<ImageProps> = ({
   );
 };
 
-export default ImageWithPositionRight;
+export default ImageWithPositionLeft;
