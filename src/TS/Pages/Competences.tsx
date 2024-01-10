@@ -1,7 +1,7 @@
 import React from "react";
 import Contacts from "../Components/ContactBottom";
 
-const Projects = () => {
+const Competences = () => {
   return (
     <>
       <div>
@@ -20,4 +20,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Competences;

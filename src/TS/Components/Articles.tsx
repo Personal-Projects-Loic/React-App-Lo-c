@@ -3,14 +3,25 @@ import styled from 'styled-components';
 
 const ArticleContainer = styled.div`
   display: flex;
-  flex-direction: column; /* Change to column */
-  align-items: center; /* Center items horizontally */
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 20px;
 `;
 
+const ImageColumn = styled.div`
+  flex: 2;
+  max-width: 60%; /* Adjust as needed */
+`;
+
+const TextColumn = styled.div`
+  flex: 1;
+  max-width: 35%; /* Adjust as needed */
+`;
+
 const ArticleImage = styled.img`
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  margin: 10px auto;
   border-radius: 8px;
   margin-bottom: 10px;
 `;
@@ -33,9 +44,13 @@ interface ArticleProps {
 const Article: React.FC<ArticleProps> = ({ title, imageSrc, text }) => {
   return (
     <ArticleContainer>
-      <ArticleImage src={imageSrc} alt={title} />
-      <ArticleTitle>{title}</ArticleTitle>
-      <ArticleText>{text.length > 500 ? text.slice(0, 500) + '...' : text}</ArticleText>
+      <ImageColumn>
+        <ArticleImage src={imageSrc} alt={title} />
+      </ImageColumn>
+      <TextColumn>
+        <ArticleTitle>{title}</ArticleTitle>
+        <ArticleText>{text.length > 500 ? text.slice(0, 500) + '...' : text}</ArticleText>
+      </TextColumn>
     </ArticleContainer>
   );
 };
