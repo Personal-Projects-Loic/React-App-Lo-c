@@ -68,3 +68,60 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Tree and architechture
+
+```bash
+src
+├── App.css
+├── App.js
+├── CSS
+│   └── Components
+│       └── BlurButtons.css
+├── Documents
+│   └── CV.pdf
+├── TS
+│   ├── Components
+│   │   ├── Articles.tsx
+│   │   ├── BackArrow.tsx
+│   │   ├── BlurButtons.tsx
+│   │   ├── BurgerMenu.tsx
+│   │   ├── ContactBottom.tsx
+│   │   ├── Corpus.tsx
+│   │   ├── Header.tsx
+│   │   ├── ImageWithPosition.tsx
+│   │   ├── ImageWithPosition2.tsx
+│   │   ├── Separators.tsx
+│   │   ├── SkillsRating.tsx
+│   │   └── Title.tsx
+│   └── Pages
+│       ├── Blog.tsx
+│       ├── CV.tsx
+│       ├── Competences.tsx
+│       ├── Home.tsx
+│       └── Projects.tsx
+├── assets
+│   ├── Home.png
+│   ├── Soho.png
+│   ├── SwiftLogo.png
+│   ├── animation.png
+│   ├── autone.png
+│   ├── chinatown.png
+│   ├── inside.png
+│   ├── list.png
+│   ├── newyork.png
+│   ├── profile-picture.jpg
+│   ├── profilepic.png
+│   └── react.png
+├── index.css
+├── index.js
+├── logo.svg
+├── react-app-env.d.ts
+├── reportWebVitals.js
+└── setupTests.js
+
+8 directories, 39 files
+```
+
+I choose this architure to disociate component, and pages. 
+I used styled component for the CSS. More easy and usefull for the development.
