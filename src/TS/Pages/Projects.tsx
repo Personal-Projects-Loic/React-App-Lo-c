@@ -8,6 +8,7 @@ import Home from "../../assets/Home.png";
 import Inside from "../../assets/inside.png";
 import List from "../../assets/list.png";
 import Animation from "../../assets/animation.png";
+import Contact from "../Components/ContactBottom";
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ const Container = styled.div`
 
 const Competences = () => {
   return (
+    <>
     <Container>
       <BackArrow to="/" />
       <Title text="Competences" />
@@ -56,6 +58,8 @@ const Competences = () => {
         corpus="Projet de fin d'etude. Tranformation audio vers partition"
       />
     </Container>
+    <Contact />
+    </>
   );
 };
 

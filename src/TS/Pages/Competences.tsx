@@ -1,13 +1,23 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import Contacts from "../Components/ContactBottom";
 
 const Projects = () => {
-    return (
+  return (
+    <>
       <div>
-        <iframe src="https://giphy.com/embed/JPgbfjx4d2sAAkQabX" width="320" height="480" frameBorder="0" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mediamodifier-iphone-app-development-screen-JPgbfjx4d2sAAkQabX">via GIPHY</a></p>
+        <iframe
+          src="https://giphy.com/embed/JPgbfjx4d2sAAkQabX"
+          width="320"
+          height="480"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+        <p>
+        </p>
       </div>
-    );
-  };
-  
-  export default Projects;
-  
+    <Contacts />
+    </>
+  );
+};
+
+export default Projects;

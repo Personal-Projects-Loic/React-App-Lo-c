@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle }) => {
         <Subtitle>{subtitle}</Subtitle>
       </Banner>
       <Content>
-        <Titles text="My journey" />
+        <Titles text="Loïc Rouzaud" />
         <Corpus
           title="Lorem ipsum"
           children={
